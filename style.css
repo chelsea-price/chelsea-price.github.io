@@ -70,6 +70,8 @@ nav li:first-child{
     display: none;
 }
 
+/* Home Page Start */
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -160,12 +162,104 @@ nav li:first-child{
     border-radius: 100%;
 }
 
+/* Projects Start */
+
+.projects {
+    display: grid;
+    place-items: center;
+}
+
+.projects .container {
+    min-height: 100vh;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 5%;
+}
+
+.projects h1 {
+    color: rgb(181, 193, 142);
+    font-size: 4rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.project-title {
+    color: rgb(97, 150, 166);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projects .description {
+    color: rgb(148, 137, 121);
+    margin-top: 10px;
+}
+
+.grid-prop {
+    color: rgb(64, 162, 227);
+}
+
+.grid-value {
+    color: rgb(161, 195, 152);
+}
+
+.box1 img {
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+
+.box2 {
+    justify-self: center;
+}
+
+.box2 img {
+    height: 200px;
+    width: 100%;
+}
+
+.box3 img {
+    height: 300px;
+    width: 250px;
+    float: right;
+    margin: 0px 0px 10px 20px;
+}
+
+.box4 {
+    justify-self: center;
+}
+.box4 img {
+    height: 600px;
+    width: 900px;
+}
+
+.box5 img {
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+
+.box6 {
+    justify-self: center;
+}
+
+.box6 img {
+    height: 300px;
+    width: 800px;
+}
+
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;
     }
     .menuButton {
         display: block;
+        position: fixed;
     }
 }
 
@@ -182,6 +276,12 @@ nav li:first-child{
 
     .image {
         grid-area: 1/1/2/2;
+    }
+
+    .projects .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
 

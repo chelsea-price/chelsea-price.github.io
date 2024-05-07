@@ -9,12 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <ul class="sidebar">
-        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">My Projects</a></li>
@@ -25,19 +39,75 @@
         <li class="hideOnMobile"><a href="about.html">About Me</a></li>
         <li class="hideOnMobile"><a href="projects.html">My Projects</a></li>
         <li class="hideOnMobile"><a href="contact.html">Contact Me</a></li>
-        <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <li class="menuButton" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
 
-    <script>
-      function showSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-      }
-      function hideSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-      }
-    </script>
+    <section class="projects">
+      <h1>Projects</h1>
+      <div class="container">
+        <div class="box1">
+          <h3 class="project-title">Meme Generator</h3>
+          <img src="./images/meme.png" alt="Meme" />
+          <p class="description">
+            I present you the "bruh" meme, created using the CSS box model. 
+            It was created during my early stages with CSS and I found myself pondering on a single thought... "How do you center a div?"
+          </p>
+        </div>
+        <div class="box2">
+          <h3 class="project-title">Pricing Table</h3>
+          <img src="./images/pricing-table.png" alt="Pricing Table" />
+          <p class="description">
+            I've created a pricing table to showcase my skills with the CSS Flexbox; <br>using flex directions, layout properties, and sizing to style and align contents. 
+          </p>
+        </div>
+        <div class="box3">
+          <h3 class="project-title">Mondrian Painting</h3>
+          <img src="./images/mondrian.png" alt="Mondrian Painting" />
+          <p class="description">
+            A CSS Grid project to replicate a Mondrian Painting using dimensions: <br>
+            "<span class="grid-prop">grid-template-columns:</span> <span class="grid-value">320px 198px 153px 50px;</span> <br>
+            <span class="grid-prop">grid-template-rows:</span> <span class="grid-value"> 130px 155px 22px;</span>" <br>
+            along with other CSS styles to achieve the right portions within the container.
+          </p>
+        </div>
+        <div class="box4">
+          <h3 class="project-title">Move It</h3>
+          <img src="./images/bootstrap.png" alt="Move It Homepage" />
+          <p class="description">
+            I've utilized Bootstrap's components to create an entire webpage with an interactive navbar, homepage, columns with different services, carousel of pictures, and a footer.
+          </p>
+        </div>
+        <div class="box5">
+          <h3 class="project-title">Dice Game</h3> 
+          <img src="./images/dice.png" alt="Dice Game" />
+          <p class="description">
+            I've created a mini game using JavaScript and the DOM. A random number is generated that is then attached to a dice number. Whoever has the highest dice number wins!
+          </p>
+        </div>
+        <div class="box6">
+          <h3 class="project-title">Drum Set</h3>
+          <img src="./images/drums.png" alt="Drum Set" />
+          <p class="description">
+            An interactive page that allows a user to press a keyboard key available in the drum kit to play a tune associated with the instrument!
+          </p>
+        </div> 
+      </div>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
